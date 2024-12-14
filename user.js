@@ -223,6 +223,16 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
 
+// PREF: disable the Firefox View tour from popping up
+user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
+
+// PREF: disable login manager
+user_pref("signon.rememberSignons", false);
+
+// PREF: disable address and credit card manager
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
 ****************************************************************************/
